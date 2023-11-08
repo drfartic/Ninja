@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0p0lwswld1b2"]
+
+[ext_resource type="Script" path="res://scripts/player/player_movement.gd" id="1_01pek"]
+[ext_resource type="Texture2D" uid="uid://dc8fja4va8x5d" path="res://sprites/la sussy.png" id="1_bdffi"]
+
+[sub_resource type="Curve" id="Curve_ackik"]
+_data = [Vector2(0, 1), 0.0, -1.75202e-07, 0, 0, Vector2(0.963917, 0.0421052), -3.1169, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n2joj"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_01pek")
+metadata/_edit_group_ = true
+
+[node name="AimLine" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width_curve = SubResource("Curve_ackik")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_bdffi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_n2joj")

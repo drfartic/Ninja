@@ -11,13 +11,29 @@ config_version=5
 [application]
 
 config/name="Ninja"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=576
+window/size/viewport_height=1024
+window/size/window_width_override=504
+window/size/window_height_override=896
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+window/handheld/orientation=1
 
 [dotnet]
 
 project/assembly_name="Ninja"
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [rendering]
 
 renderer/rendering_method="mobile"
+2d/snap/snap_2d_vertices_to_pixel=true

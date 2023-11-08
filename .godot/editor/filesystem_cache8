@@ -1,3 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699279885
+::res://::1699432472
+export_presets.cfg::TextFile::-1::1699281080::0::1::::<><>::
 icon.svg::CompressedTexture2D::2116605658856772531::1699279875::1699279887::1::::<><>::
+::res://audio/::1699280512
+::res://fonts/::1699280521
+::res://scenes/::1699303922
+game.tscn::PackedScene::6494879686994143453::1699303922::0::1::::<><>::uid://d0p0lwswld1b2::::res://scenes/player.tscn
+player.tscn::PackedScene::8946487561227734573::1699303922::0::1::::<><>::res://scripts/player/player_movement.gd<>uid://dc8fja4va8x5d::::res://sprites/la sussy.png
+::res://scripts/::1699282193
+::res://scripts/player/::1699291133
+player_movement.gd::GDScript::-1::1699291133::0::1::::<>CharacterBody2D<>::
+::res://sprites/::1699281457
+la sussy.png::CompressedTexture2D::7368083907103113539::1699281457::1699281457::1::::<><>::
